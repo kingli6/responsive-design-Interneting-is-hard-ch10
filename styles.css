@@ -16,7 +16,7 @@
   height: 300px;
   display: flex;
   justify-content: center;
-  align-items: center; /*This made the image small*/
+  align-items: center; /*This made the image small....  why?*/
 }
 
 .menu {
@@ -47,6 +47,21 @@
 
 .feature-3 {
   background-color: #c8c6fa; /*purple*/
+}
+
+.header {
+  height: auto;
+  justify-content: inherit; /*I don't remember what this does*/
+  align-items: inherit;
+}
+
+.photo img {
+  width: 100%;
+  display: block;
+}
+.illustration img {
+  width: 100%;
+  display: block;
 }
 
 /* Mobile Styles*/

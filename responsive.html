@@ -19,10 +19,25 @@ https://www.internetingishard.com/html-and-css/responsive-design/
     <div class="section menu"></div>
     
     <div class="section header">
-      <img src="images/header.svg" alt="">
+      <div class="photo">
+        <img src="images/photo-small.jpg" 
+        srcset="images/photo-big.jpg 2000w,
+                images/photo-small.jpg 1000w"
+        sizes="(min-width: 960px) 960px,
+              100vw"/>
+      </div>
     </div>
 
-    <div class="section content"><img src="images/content.svg" alt=""></div>
+    <div class="section content">
+      <div class="illustration">
+        <img src="images/illustration-small.png"
+        srcset="images/illustration-small.png 1x, 
+        images/illustration-big.png 2x" 
+        style="max-width: 500px;" alt="">
+        <!-- https://www.internetingishard.com/html-and-css/responsive-images/
+          Adding a srcset attribute to our <img/> element lets us present our high-resolution image only to retina devices, falling back to the low-resolution version for standard screens. Update our .illustration element to match the following: -->
+      </div>
+    </div>
 
     <div class="section sign-up">
       <img src="images/sign-up.svg" alt="">

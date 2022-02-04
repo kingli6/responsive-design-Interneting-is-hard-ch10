@@ -20,11 +20,16 @@ https://www.internetingishard.com/html-and-css/responsive-design/
     
     <div class="section header">
       <div class="photo">
-        <img src="images/photo-small.jpg" 
+        <picture>
+          <source media="(min-width: 401px)" srcset="images/photo-big.jpg">
+          <source media="(max-width: 400px)" srcset="images/photo-tall.jpg">
+          <img src="images/photo-small.jpg"/>
+        </picture>
+        <!-- <img src="images/photo-small.jpg" 
         srcset="images/photo-big.jpg 2000w,
                 images/photo-small.jpg 1000w"
         sizes="(min-width: 960px) 960px,
-              100vw"/>
+              100vw"/> -->
       </div>
     </div>
 
